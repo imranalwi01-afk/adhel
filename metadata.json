@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: Smart Study Planner",
+  "description": "Premium, aesthetic, and fully functional coquette study planner with Pomodoro focus timer, scheduling, exam counts, habit-building tools, and smart statistics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

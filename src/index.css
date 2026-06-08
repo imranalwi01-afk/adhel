@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Poppins', 'Nunito', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;
+  
+  --color-coquette-pink: #FFBEC8;
+  --color-coquette-rose: #FFF0F2;
+  --color-coquette-lace: #FFFBFB;
+  --color-coquette-gold: #D4AF37;
+  --color-coquette-charcoal: #3D2D30;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-coquette-rose);
+  color: var(--color-coquette-charcoal);
+  overflow-x: hidden;
+}
+
+/* Custom gorgeous coquette scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-coquette-rose);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-coquette-pink);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFA0B0;
+}
+
+/* Float Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Ribbons and hearts ambient pattern */
+.coquette-lace-bg {
+  background-image: radial-gradient(#FFBEC8 0.5px, transparent 0.5px), radial-gradient(#FFBEC8 0.5px, #FFFBFB 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  opacity: 0.15;
+}
+
